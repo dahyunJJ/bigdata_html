@@ -9,8 +9,25 @@
   div {
     color: green;
   }
+
+  /* class를 사용할 때는 앞에 .을 붙여준다. */
+  /* class는 중복 가능 */
   .text-blue {
     color: blue;
+  }
+  .text-red {
+    color: red;
+  }
+
+  /* id를 사용할 때는 앞에 #을 붙여준다. */
+  /* id는 중복 불가능. 무조건 하나만 -> css 스타일링 할 때는 id보다 class를 사용한다. */
+  /* class < id 우선 적용 */
+  #bg-blue {
+    background-color: blue;
+    color: #fff;
+  }
+  #text-green {
+    color: green;
   }
 </style>
 <body>
@@ -28,10 +45,13 @@
   </span>
 
   <!-- 글 본문을 작성할 때 많이 사용하는 태그 -->
-  <p>paragraph의 약자</p>
+  <p class="text-red" id="text-green">paragraph의 약자</p>
+  <p>Lorem ipsum dolor sit amet.</p>
+  <p class="text-red">Lorem, ipsum dolor.</p>
+  <p>Lorem ipsum dolor sit amet consectetur.</p>
 
   <!-- Heading Tag : h1 ~ h3을 가장 많이 사용한다. -->
-  <h1>h1제목</h1>
+  <h1 id="bg-blue">h1제목</h1>
   <h2>h2제목</h2>
   <h3>h3제목</h3>
   <h4>h4제목</h4>
