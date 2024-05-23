@@ -1,0 +1,39 @@
+body {
+  background-color: #000;
+}
+.wrap {
+  width: 400px;
+  margin: 160px auto;
+  text-align: center;
+}
+img {
+  width: 300px;
+}
+.box {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 30px 0;
+}
+.box span {
+  font-weight: 700;
+}
+
+/* index2.html */
+.white-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.logo {
+  margin: 30px 0;
+}
+
+.text {
+  font-weight: 700;
+}
+.text span {
+  text-decoration: underline;
+}
