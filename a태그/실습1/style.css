@@ -1,0 +1,35 @@
+img {
+  width: 300px;
+}
+
+.box {
+  margin: 30px auto;
+  width: 400px;
+  border-radius: 16px;
+  /* text-align 
+    - 기본값은 left
+    - 속성으로 이미지도 정렬 가능
+    - 이미지를 정렬할 때는 부모 요소에게 적용해야함
+  */
+  text-align: center;
+  padding: 20px;
+}
+
+.google {
+  border: 2px solid blue;
+}
+.google span {
+  font-weight: 700;
+}
+
+.naver {
+  border: 2px solid green;
+  margin-top: 30px;
+}
+.naver h1 {
+  color: green;
+}
+.naver a {
+  text-decoration: none;
+  color: green;
+}
