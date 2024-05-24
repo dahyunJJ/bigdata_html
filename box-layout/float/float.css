@@ -1,0 +1,30 @@
+.layout {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.header {
+  background-color: aquamarine;
+  height: 80px;
+}
+
+.main-left {
+  background-color: cornflowerblue;
+  float: left;
+  width: 200px;
+  height: 600px;
+}
+
+.main-right {
+  background-color: coral;
+  float: right;
+  width: 800px;
+  height: 600px;
+}
+
+.footer {
+  background-color: lightgreen;
+  clear: both;
+  height: 120px;
+}
