@@ -1,0 +1,30 @@
+.wrapper {
+  width: 1200px;
+  font-size: 36px;
+  margin: 50px auto;
+}
+
+.header {
+  background-color: aquamarine;
+  height: 100px;
+}
+
+.left-box {
+  background-color: cornflowerblue;
+  width: 200px;
+  height: 500px;
+  float: left;
+}
+
+.right-box {
+  background-color: coral;
+  width: 1000px;
+  height: 500px;
+  float: right;
+}
+
+.footer {
+  background-color: lightgreen;
+  height: 100px;
+  clear: both;
+}
