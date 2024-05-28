@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.global-header {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.gnb-list {
+  display: flex;
+}
+.gnb-list li a {
+  color: #fff;
+  font-weight: 700;
+  padding: 0 20px;
+}
+.gnb-list li a:hover {
+  color: dodgerblue;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.back-img {
+  height: 600px;
+  background-image: url(./images/back.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back-txt {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.back-txt p,
+.back-txt button {
+  margin-top: 20px;
+}
+.back-txt p {
+  font-size: 18px;
+}
+.back-txt button {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.second-box {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 500px;
+  margin: -66px auto 0;
+  padding: 40px 36px;
+  border-radius: 20px;
+}
+.second-box p {
+  margin-top: 24px;
+}
+
+.card-list {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.card-list div {
+  width: 300px;
+  margin: 0 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 50px 16px;
+}
+.card-list div p {
+  margin-top: 20px;
+}
+
+.global-footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  margin-top: 80px;
+}
+
+.footer-link {
+  display: flex;
+}
+.footer-link a {
+  color: #fff;
+  padding: 0 12px;
+}
