@@ -37,3 +37,25 @@
 .scroll {
   height: 1600px;
 }
+
+.back-box {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 600px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.back-img {
+  width: 400px;
+  height: 400px;
+  background: url(https://flexible.img.hani.co.kr/flexible/normal/970/777/imgdb/resize/2019/0926/00501881_20190926.JPG)
+    no-repeat center / cover;
+  /* attachment 기본값 : scroll */
+  background-attachment: fixed;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
