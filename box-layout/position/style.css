@@ -1,0 +1,39 @@
+.position {
+  position: relative;
+  width: 600px;
+  height: 800px;
+  margin: 50px auto;
+  border: 4px solid blue;
+}
+
+.position div {
+  width: 200px;
+  height: 120px;
+  border: 1px solid #000;
+}
+
+.box1 {
+  /* top, bottom, left, right */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: thistle;
+}
+.box2 {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: steelblue;
+}
+.box3 {
+  /* 부모 요소의 크기 안에서만 움직인다. */
+  position: sticky;
+  top: 20px;
+  left: 0;
+  background-color: sienna;
+}
+
+.scroll {
+  height: 1600px;
+}
