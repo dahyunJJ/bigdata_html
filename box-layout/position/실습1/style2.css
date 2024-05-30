@@ -23,6 +23,7 @@ li {
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 html {
@@ -85,7 +86,6 @@ body {
   padding: 12px 20px;
   border-radius: 8px;
   background-color: #fff;
-  cursor: pointer;
 }
 
 .card-list {
@@ -184,6 +184,28 @@ body {
 }
 .quick-menu ul a:hover {
   font-weight: bold;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.popup .popup-header {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-close-btn {
+  font-size: 24px;
+}
+.popup img {
+  width: 100%;
 }
 
 /* /// 반응형 /// */
