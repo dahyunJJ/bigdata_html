@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background-color: lightblue;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  padding: 0 12px;
+}
+.nav ul a {
+  color: #fff;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.nav ul a:hover {
+  color: dodgerblue;
+  text-decoration: underline;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.back-img {
+  background: url(./images/스누피배경.jpeg) no-repeat top / cover;
+  height: 600px;
+}
+
+.back-txt {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.back-txt h2 {
+  font-size: 42px;
+}
+.back-txt p {
+  width: 500px;
+  text-align: center;
+  margin: 20px auto;
+}
+.back-txt button {
+  padding: 8px 16px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.card-list {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card-list div {
+  width: 30%;
+  height: 300px;
+  background-color: lightcyan;
+  border-radius: 10px;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.card-list div p {
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+/* sidemenu */
+.side-menu {
+  z-index: 10;
+  position: fixed;
+  top: 200px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  text-align: center;
+  background-color: #eaeaea;
+  border-radius: 10px;
+}
+.side-menu a {
+  padding: 10px 30px;
+}
+.side-menu a:hover {
+  font-weight: bold;
+}
+
+.fix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  background-color: lightcyan;
+  height: 600px;
+}
+
+.fix-img1 {
+  height: 500px;
+  width: 400px;
+  background-image: url(./images/스누피2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.fix-img2 {
+  height: 500px;
+  width: 400px;
+  background: url(./images/pngegg.png) no-repeat right 400px top 460px / 400px
+    auto;
+  background-attachment: fixed;
+  background-color: #fff;
+}
+
+/*///// footer /////*/
+.footer-nav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: lightblue;
+}
+.footer-nav ul {
+  display: flex;
+  margin-right: 80px;
+}
+.footer-nav ul li {
+  padding: 0 20px;
+}
+.footer-nav ul a {
+  color: #fff;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  background-color: lightslategray;
+}
+.top-btn i {
+  color: #fff;
+  font-size: 24px;
+}
