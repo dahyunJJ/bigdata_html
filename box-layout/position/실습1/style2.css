@@ -187,6 +187,7 @@ body {
 }
 
 .popup {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -197,6 +198,10 @@ body {
   border-radius: 12px;
   background-color: #fff;
 }
+.popup.is-active {
+  display: block;
+}
+
 .popup .popup-header {
   display: flex;
   justify-content: space-between;
