@@ -1,177 +1,265 @@
+/* google fonts */
+.gowun-dodum-regular {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
   list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
+body {
+  font-family: "Gowun Dodum", sans-serif;
 }
 
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+.global-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
-  background-color: lightblue;
-}
-.nav ul {
-  display: flex;
-}
-.nav ul li {
-  padding: 0 12px;
-}
-.nav ul a {
-  color: #fff;
-  font-weight: 700;
-  transition: 0.3s;
-}
-.nav ul a:hover {
-  color: dodgerblue;
-  text-decoration: underline;
+  padding: 12px 40px;
+  background-color: skyblue;
 }
 
 .logo img {
   width: 60px;
 }
 
-.back-img {
-  background: url(./images/스누피배경.jpeg) no-repeat top / cover;
-  height: 600px;
+.gnb-list {
+  display: flex;
+}
+.gnb-list li {
+  margin-right: 20px;
+}
+.gnb-list li:last-child {
+  margin-right: 0;
+}
+.gnb-list li a {
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.gnb-list li a:hover {
+  color: dodgerblue;
 }
 
-.back-txt {
-  height: 600px;
+.back-img {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 500px;
   color: #fff;
+  background: url(./assets/images/스누피배경.jpeg) no-repeat center / cover;
 }
-.back-txt h2 {
+.back-img h2 {
   font-size: 42px;
 }
-.back-txt p {
-  width: 500px;
+.back-img p {
+  width: 800px;
+  margin-top: 20px;
   text-align: center;
-  margin: 20px auto;
+  font-size: 22px;
 }
-.back-txt button {
-  padding: 8px 16px;
+.back-img .popup-open-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
   background-color: #fff;
-  border: none;
-  border-radius: 10px;
 }
 
 .card-list {
-  width: 90%;
-  margin: 20px auto;
   display: flex;
   justify-content: space-between;
+  width: 90%;
+  margin: 40px auto;
 }
 .card-list div {
   width: 30%;
-  height: 300px;
-  background-color: lightcyan;
-  border-radius: 10px;
-  padding: 40px;
-  box-sizing: border-box;
   text-align: center;
+  padding: 20px 12px;
+  border-radius: 12px;
+  background-color: rgb(184, 235, 255);
 }
 .card-list div p {
-  margin-top: 20px;
-  line-height: 30px;
+  margin-top: 12px;
 }
 
-/* sidemenu */
-.side-menu {
-  z-index: 10;
-  position: fixed;
-  top: 200px;
-  right: 50px;
-  display: flex;
-  flex-direction: column;
-  width: 160px;
-  text-align: center;
-  background-color: #eaeaea;
-  border-radius: 10px;
-}
-.side-menu a {
-  padding: 10px 30px;
-}
-.side-menu a:hover {
-  font-weight: bold;
-}
-
-.fix {
+.fix-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid red; */
-  background-color: lightcyan;
   height: 600px;
+  background-color: rgb(184, 235, 255);
 }
-
-.fix-img1 {
+.fix-box div {
+  width: 500px;
   height: 500px;
-  width: 400px;
-  background-image: url(./images/스누피2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-color: #fff;
-  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-attachment: fixed;
+}
+.fix-img1 {
+  margin-right: 20px;
+  background-image: url(./assets/images/pngegg.png);
+  background-position: bottom left 380px;
 }
 .fix-img2 {
-  height: 500px;
-  width: 400px;
-  background: url(./images/pngegg.png) no-repeat right 400px top 460px / 400px
-    auto;
-  background-attachment: fixed;
-  background-color: #fff;
+  background-image: url(./assets/images/스누피2.png);
+  background-position: bottom right 380px;
 }
 
-/*///// footer /////*/
-.footer-nav {
-  height: 60px;
+.global-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 40px;
   color: #fff;
-  background-color: lightblue;
+  background-color: skyblue;
 }
-.footer-nav ul {
+
+.sns-link {
   display: flex;
-  margin-right: 80px;
 }
-.footer-nav ul li {
-  padding: 0 20px;
+.sns-link li a {
+  padding: 12px;
 }
-.footer-nav ul a {
-  color: #fff;
+.sns-link li a i {
+  font-size: 24px;
+  transition: 0.3s;
+}
+.sns-link li a i:hover {
+  color: dodgerblue;
 }
 
 .top-btn {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 45px;
-  border-radius: 50%;
-  background-color: lightslategray;
+  bottom: 50px;
+  right: 50px;
 }
-.top-btn i {
-  color: #fff;
+.top-btn a i {
+  font-size: 36px;
+  color: rgb(21, 107, 141);
+}
+
+.quick-menu {
+  position: fixed;
+  top: 200px;
+  right: 50px;
+}
+.quick-menu ul {
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.quick-menu ul li {
+  padding: 8px 0;
+}
+.quick-menu ul a {
+  color: #333;
+  transition: 0.3s;
+}
+.quick-menu ul a:hover {
+  font-weight: bold;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.popup.is-active {
+  display: block;
+}
+
+.popup .popup-header {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-close-btn {
   font-size: 24px;
+}
+.popup img {
+  width: 100%;
+}
+
+/* /// 반응형 /// */
+@media screen and (max-width: 1200px) {
+  .card-list {
+    width: 70%;
+    flex-direction: column;
+  }
+  .card-list div {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .fix-box div {
+    background-color: transparent;
+  }
+  .fix-img1 {
+    margin-right: 0;
+    background-image: url(./assets/images/pngegg.png);
+    background-position: bottom center;
+  }
+  .fix-img2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .back-img p {
+    width: 450px;
+    margin-top: 10px;
+  }
+
+  .card-list {
+    width: 90%;
+  }
+
+  .global-footer {
+    flex-direction: column;
+    margin-top: 12px;
+  }
+
+  .sns-link li a {
+    padding: 8px;
+  }
+  .sns-link li a i {
+    font-size: 20px;
+  }
+
+  .quick-menu {
+    display: none;
+  }
 }
