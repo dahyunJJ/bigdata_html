@@ -157,6 +157,7 @@ footer ul li a {
 
 .footer-1 {
   margin-right: 40px;
+  font-weight: 700;
 }
 .footer-1 .txt-yellow {
   color: var(--yellow);
@@ -174,6 +175,7 @@ footer ul li a {
   width: 40px;
   height: 40px;
   margin: 0 8px;
+  cursor: pointer;
   border-radius: 50%;
   background-color: #fff;
   transition: 500ms;
@@ -191,4 +193,155 @@ footer ul li a {
   transform: translate(-50%, -50%);
   color: var(--red);
   font-size: 24px;
+}
+
+.search {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.search.is-open {
+  display: block;
+}
+
+.search > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+.search .search-box {
+  width: 100%;
+  display: flex;
+}
+.search .search-box input {
+  flex-grow: 1;
+  margin-right: 20px;
+  border-radius: 30px;
+  padding: 24px 40px;
+}
+.search .search-box button {
+  font-weight: 700;
+  border-radius: 30px;
+  padding: 24px 20px;
+  background-color: var(--yellow);
+}
+.search .search-close-btn {
+  width: 80px;
+  height: 80px;
+  margin-top: 50px;
+  border-radius: 50%;
+  position: relative;
+  background-color: var(--yellow);
+  cursor: pointer;
+}
+.search .search-close-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+}
+
+/* /// 반응형 /// */
+@media screen and (max-width: 1200px) {
+  .menu-item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .mac-story .mac-story-list {
+    width: 50%;
+  }
+  .mac-story .mac-story-list li img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sm-only {
+    display: block;
+  }
+  .sm-hidden {
+    display: none;
+  }
+
+  .sidebar-open-btn {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .back-img {
+    height: 400px;
+  }
+
+  .menu-item {
+    width: 100%;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+  .footer-info {
+    text-align: right;
+  }
+  .footer-link {
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-200px);
+    width: 200px;
+    height: 100%;
+    padding: 30px 0;
+    background-color: #fff;
+    z-index: 10;
+    transition: transform 300ms ease-in-out;
+  }
+  .sidebar.active {
+    /* display: block; */
+    transform: translateX(0);
+  }
+
+  .sidebar li {
+    font-size: 18px;
+    padding: 8px 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  .sidebar li:hover {
+    font-weight: 700;
+    background-color: #e1e1e1;
+  }
+
+  .overlay {
+    /* display: none -> 화면에서 사라짐 & 공간 차지 X */
+    /* visibility : hidden -> 화면에서 사라짐 & 공간 차지함 */
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 300ms ease-in-out;
+  }
+  .overlay.active {
+    /* visibility 기본값 : visible */
+    visibility: visible;
+    opacity: 1;
+  }
 }
