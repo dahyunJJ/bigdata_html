@@ -305,7 +305,7 @@ footer ul li a {
     transform: translateX(-200px);
     width: 200px;
     height: 100%;
-    padding: 30px 0;
+    padding: 30px 4px;
     background-color: #fff;
     z-index: 10;
     transition: transform 300ms ease-in-out;
@@ -315,15 +315,37 @@ footer ul li a {
     transform: translateX(0);
   }
 
-  .sidebar li {
+  .sidebar .sidebar-item {
+    width: 100%;
     font-size: 18px;
-    padding: 8px 0;
     text-align: center;
-    cursor: pointer;
   }
-  .sidebar li:hover {
+  .sidebar .sidebar-item > a {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 0;
+    cursor: pointer;
+    border: 1px solid #333;
+    margin-bottom: 1px;
+  }
+  .sidebar .sidebar-item > a:hover {
     font-weight: 700;
+  }
+
+  .sidebar .sidebar-sub {
+    height: 0;
+    overflow: hidden;
+    transition: 500ms;
+  }
+  .sidebar .sidebar-sub li:hover {
     background-color: #e1e1e1;
+  }
+  .sidebar .sidebar-sub li {
+    padding: 8px 0;
+  }
+
+  .sidebar .sidebar-item:hover .sidebar-sub {
+    height: 160px;
   }
 
   .overlay {
