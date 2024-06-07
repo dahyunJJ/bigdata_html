@@ -7,15 +7,15 @@
 }
 
 header {
-  padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 40px;
   border-bottom: 1px solid #333;
+  transition: 500ms;
 }
 
 .logo {
-  text-decoration: none;
   color: #333;
 }
 
