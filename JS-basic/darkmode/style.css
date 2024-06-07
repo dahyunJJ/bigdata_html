@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  text-decoration: none;
+  color: #333;
+}
+
+.btn {
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* /// dark-mode /// */
+header.dark-mode {
+  background-color: #333;
+}
+header.dark-mode .logo {
+  color: #fff;
+}
+header.dark-mode .btn {
+  background-color: #fff;
+  color: #333;
+}
